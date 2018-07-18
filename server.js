@@ -24,7 +24,11 @@ function onHttpStart() {
 }
 
 app.get("/", (req, res) => {
-    res.send("Hello World!");
+    res.render("home", {});
 });
 
-app.listen(HTTP_PORT);
+app.use((req, res) => {
+    res.status(404).send("<img src='https://cdn-images-1.medium.com/max/1600/1*dMtM0XI574DCyD5miIcQYg.png' alt='Page not found' >");
+});
+
+app.listen(HTTP_PORT, onHttpStart);
