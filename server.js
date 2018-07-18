@@ -10,6 +10,8 @@ app.engine('.hbs', exphbs({
 
 app.set('view engine', '.hbs');
 
+app.use(express.static('public'));
+
 //This will add the property "activeRoute" to "app.locals" whenever the route changes
 app.use(function (req, res, next) {
     let route = req.baseUrl + req.path;
@@ -25,6 +27,18 @@ function onHttpStart() {
 
 app.get("/", (req, res) => {
     res.render("home", {});
+});
+
+app.get("/about", (req, res) => {
+    res.render("about", {});
+});
+
+app.get("/projects", (req, res) => {
+    res.render("projects", {});
+});
+
+app.get("/contact", (req, res) => {
+    res.redirect("mailto:venus.kong.dev@gmail.com");
 });
 
 app.use((req, res) => {
