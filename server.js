@@ -6,6 +6,13 @@ const exphbs = require("express-handlebars");
 app.engine('.hbs', exphbs({
     extname: '.hbs',
     defaultLayout: 'main',
+    helpers:{
+        navLink: function(url, options){
+            return '<a class="nav-link ' + 
+                ((url == app.locals.activeRoute) ? 'active" ' : '"') + 
+                'href="' + url + '">' + options.fn(this) + '</a>';
+        }
+    }
 }));
 
 app.set('view engine', '.hbs');
@@ -31,6 +38,10 @@ app.get("/", (req, res) => {
 
 app.get("/about", (req, res) => {
     res.render("about", {});
+});
+
+app.get("/blog", (req, res) => {
+    res.render("blog", {});
 });
 
 app.get("/projects", (req, res) => {
