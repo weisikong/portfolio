@@ -1,14 +1,13 @@
-/*
-body {
-    background-image: url("zen-garden.jpg");
+html, body {
+    height: 100%;
 }
 
-.card-body {
-    color: rgb(51, 51, 51);
+#cover {
+    background: #222 url("/css/zen-garden.jpg") center center no-repeat;
+    background-size: cover;
+    height: 100%;
 }
 
-
-*/
 
 /*
 
@@ -36,17 +35,16 @@ section {
 
 .about-page-article {
     box-sizing: border-box;
-    height: 578px;
+    height: 538px;
     overflow: scroll;
 }
 
-.row .about-page {
-    padding-bottom: 3em;
-}
+
 
 .masthead {
-    padding-bottom: 30px;
+    padding-bottom: 40px;
 }
+
 
 .cover-container {
     max-width: 80em;
