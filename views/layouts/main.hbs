@@ -13,9 +13,12 @@
 <body class="text-center">
 
     <div id="cover" class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <div class="overlay">
       <header class="masthead mb-auto">
         <div class="inner">
-          <h3 class="masthead-brand">Hi, I'm Weisi</h3>
+          <!--
+          <h5 class="masthead-brand">Words alone should be beautiful too.</h5>
+          -->
           <nav class="nav nav-masthead justify-content-center">
             {{#navLink "/"}}Home{{/navLink}}
             {{#navLink "/about"}}About{{/navLink}}
@@ -25,11 +28,11 @@
           </nav>
         </div>
       </header>
-
+      <div class="cover-caption">
       <main role="main" class="inner cover">
         {{{body}}}
       </main>
-      
+      </div>
       <footer class="mastfoot mt-auto">
         <div class="inner">
           <!--
@@ -37,7 +40,7 @@
           -->
         </div>
       </footer>
-      
+      </div>
       
     </div>    
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="

@@ -1,37 +1,26 @@
 html, body {
     height: 100%;
-}
-
-#cover {
-    background: #222 url("/css/zen-garden.jpg") center center no-repeat;
+    background: #222 url("/css/beach.jpg") center center no-repeat;
     background-size: cover;
     height: 100%;
 }
 
-
-/*
-
-.cover-container {
-    height: inherit;
+.overlay {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    overflow: auto;
+    top: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.7);
 }
 
-.inner, .cover {
-    height: inherit;
+.cover-center {
+    width: 100%;
+    padding-top: 15%;
 }
 
-.container, .about-page {
-    height: inherit;
-}
 
-.row {
-    height: inherit;
-}
-
-section {
-    height: inherit;
-    overflow: scroll;
-}
-*/
 
 .about-page-article {
     box-sizing: border-box;
@@ -44,7 +33,9 @@ section {
 .masthead {
     padding-bottom: 40px;
 }
-
+.nav-masthead {
+    float: none;
+}
 
 .cover-container {
     max-width: 80em;
