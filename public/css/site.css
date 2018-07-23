@@ -23,9 +23,11 @@ html, body {
 
 
 .about-page-article {
+    max-width: 70%;
     box-sizing: border-box;
     height: 538px;
     overflow: scroll;
+    margin: auto;
 }
 
 
@@ -44,11 +46,17 @@ html, body {
 .project-container {
     width: 60em;
     max-height: 70em;
+    padding-top: 5em;
 }
 
+
 .bg-secondary {
-    background-color:#333 !important;
-    border: #333 !important;
+    background-color:transparent !important;
+    border: transparent !important;
+}
+
+.about-contact {
+    margin-bottom: 3em;
 }
 
 aside {
