@@ -28,6 +28,17 @@ html, body {
     height: 538px;
     overflow: scroll;
     margin: auto;
+    /*font-family: 'Lora', serif;*/
+    font-family: 'EB Garamond', serif;
+    line-height: 30px;
+    font-size: large;
+    text-align: left;
+}
+
+.about-contact {
+    font-family: 'EB Garamond', serif;
+    line-height: 30px;
+    font-size: large;
 }
 
 
