@@ -81,3 +81,7 @@ aside {
 .right {
     text-align: left;
 }
+
+.project-card:hover {
+    transform: scale(1.1);
+}
