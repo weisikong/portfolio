@@ -21,12 +21,15 @@ html, body {
 }
 
 
-
+.container {
+    overflow: scroll;
+    margin-bottom: 6em;
+}
 .about-page-article {
     max-width: 70%;
     box-sizing: border-box;
     height: 518px;
-    overflow: scroll;
+    /*overflow: scroll;*/
     margin: auto;
     padding-bottom: 6em;
     /*font-family: 'Lora', serif;*/
@@ -72,16 +75,6 @@ html, body {
     margin-bottom: 3em;
 }
 
-
-/*
-.left {
-    text-align: right;
-    padding-right: 3em;
-}
-.right {
-    text-align: left;
-}
-*/
 .project-card {
     -webkit-transition: transform 0.2s ease-in-out;
     -moz-transition:transform 0.2s ease-in-out;
@@ -107,7 +100,8 @@ h2.name {
 }
 
 .btn-custom:hover {
-    color: rgb(80, 177, 133);
+    color: rgb(184, 104, 57);
+    background-color: black!important;
 }
 
 .btn-pullmore {

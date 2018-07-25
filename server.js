@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const path = require("path");
 const exphbs = require("express-handlebars");
+const fs = require("fs");
 
 app.engine('.hbs', exphbs({
     extname: '.hbs',
@@ -36,6 +37,11 @@ app.get("/", (req, res) => {
     res.render("home", {});
 });
 
+app.get("/script.js", (req, res) => {
+    script = fs.readFileSync("script.js", "utf8");
+    res.send(script);
+})
+
 app.get("/about", (req, res) => {
     res.render("about", {});
 });
@@ -53,7 +59,9 @@ app.get("/contact", (req, res) => {
 });
 
 app.use((req, res) => {
-    res.status(404).send("<img src='https://cdn-images-1.medium.com/max/1600/1*dMtM0XI574DCyD5miIcQYg.png' alt='Page not found' >");
+    //res.status(404).send("<img src='https://cdn-images-1.medium.com/max/1600/1*dMtM0XI574DCyD5miIcQYg.png' alt='Page not found' >");
+    res.status(404).send("OMG!!!Page not found. Go back while you can! ");
+
 });
 
 app.listen(HTTP_PORT, onHttpStart);
