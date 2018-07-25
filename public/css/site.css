@@ -70,10 +70,8 @@ html, body {
     margin-bottom: 3em;
 }
 
-aside {
-    font-size: smaller;
-}
 
+/*
 .left {
     text-align: right;
     padding-right: 3em;
@@ -81,7 +79,36 @@ aside {
 .right {
     text-align: left;
 }
-
+*/
+.project-card {
+    -webkit-transition: transform 0.2s ease-in-out;
+    -moz-transition:transform 0.2s ease-in-out;
+    -o-transition:transform 0.2s ease-in-out;
+    -ms-transition:transform 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out;
+}
 .project-card:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
     transform: scale(1.1);
+    
+}
+
+.fa-linkedin-in, .fa-github, .fa-envelope {
+    font-size: xx-large;
+}
+
+h2.name {
+    margin-bottom: 1.5em;
+}
+
+.btn-custom:hover {
+    color: rgb(80, 177, 133);
+}
+
+.btn-pullmore {
+    width: 100%;
+    border-radius: 0;
 }
