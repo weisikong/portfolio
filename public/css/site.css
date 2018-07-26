@@ -15,12 +15,6 @@ html, body {
     background: rgba(0, 0, 0, 0.7);
 }
 
-.cover-center {
-    width: 100%;
-    padding-top: 15%;
-}
-
-
 .container {
     overflow: scroll;
     margin-bottom: 6em;
