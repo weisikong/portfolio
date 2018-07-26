@@ -15,15 +15,17 @@ html, body {
     background: rgba(0, 0, 0, 0.7);
 }
 
-.container {
+.cover-container {
     overflow: scroll;
-    margin-bottom: 6em;
+    max-width: 80em;
+
 }
+
 .about-page-article {
     max-width: 70%;
     box-sizing: border-box;
-    height: 518px;
-    /*overflow: scroll;*/
+    /*
+    overflow: scroll;*/
     margin: auto;
     padding-bottom: 6em;
     /*font-family: 'Lora', serif;*/
@@ -48,10 +50,6 @@ html, body {
 .nav-masthead {
     float: none;
 }
-
-.cover-container {
-    max-width: 80em;
-  }
 
 .project-container {
     width: 60em;
