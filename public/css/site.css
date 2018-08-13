@@ -28,8 +28,9 @@ html, body {
     overflow: scroll;*/
     margin: auto;
     padding-bottom: 6em;
-    /*font-family: 'Lora', serif;*/
+    /*font-family: 'Lora', serif;
     font-family: 'EB Garamond', serif;
+    font-family: 'PT Sans', sans-serif;*/
     line-height: 30px;
     font-size: large;
     text-align: left;
@@ -37,12 +38,11 @@ html, body {
 }
 
 .about-contact {
-    font-family: 'EB Garamond', serif;
+    /*
+    font-family: 'EB Garamond', serif;*/
     line-height: 30px;
     font-size: large;
 }
-
-
 
 .masthead {
     padding-bottom: 40px;
@@ -83,7 +83,7 @@ html, body {
     
 }
 
-.fa-linkedin-in, .fa-github, .fa-envelope {
+.fa-linkedin-in, .fa-github, .fa-envelope, .fa-quora{
     font-size: xx-large;
 }
 
