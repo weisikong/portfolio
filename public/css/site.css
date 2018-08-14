@@ -78,6 +78,37 @@ html, body {
     padding-top: 5em;
 }
 
+.carousel-item {
+    height: 40rem;
+    background-color: transparent;
+    -webkit-transition: transform 0.2s ease-in-out;
+    -moz-transition:transform 0.2s ease-in-out;
+    -o-transition:transform 0.2s ease-in-out;
+    -ms-transition:transform 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out;
+  }
+
+.carousel-item:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    
+}
+
+.first-slide, .second-slide {
+    min-width: 30em !important;
+    width: 30em;
+    border-radius:5px;
+}
+
+.carousel-caption {
+    padding-top: 0;
+    position: absolute;
+    right: 15%;
+    top: 52%;
+}
 
 .bg-secondary {
     background-color:transparent !important;
@@ -121,3 +152,4 @@ h2.name {
     width: 100%;
     border-radius: 0;
 }
+
