@@ -1,6 +1,6 @@
 html, body {
     height: 100%;
-    background: #222 url("/css/beach.jpg") center center no-repeat;
+    background: #222 url("/css/board-bread-breakfast.jpg") center center no-repeat;
     background-size: cover;
     height: 100%;
 }
@@ -12,13 +12,20 @@ html, body {
     overflow: auto;
     top: 0px;
     left: 0px;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.377);
 }
+
+
 
 .cover-container {
     overflow: scroll;
     max-width: 80em;
 
+}
+
+#about-page {
+    width: 80%;
+    float:left;
 }
 
 .about-page-article {
@@ -42,6 +49,20 @@ html, body {
     font-family: 'EB Garamond', serif;*/
     line-height: 30px;
     font-size: large;
+}
+
+/* small device */
+@media only screen and (max-width: 600px) {
+    #about-page{
+        width: 100%;
+    }
+    .about-page-article {
+        max-width: 100%;
+    }
+
+    #hidden1 {
+        font-size: smaller;
+    }
 }
 
 .masthead {
