@@ -58,6 +58,7 @@ html, body {
     }
     .about-page-article {
         max-width: 100%;
+        padding: 1em;
     }
 
     #hidden1 {
@@ -77,6 +78,7 @@ html, body {
     max-height: 70em;
     padding-top: 5em;
 }
+
 
 .carousel-item {
     height: 40rem;
@@ -100,7 +102,7 @@ html, body {
 .first-slide, .second-slide {
     min-width: 30em !important;
     width: 30em;
-    border-radius:5px;
+    box-shadow: 5px 10px 8px #555555;
 }
 
 .carousel-caption {
@@ -153,3 +155,19 @@ h2.name {
     border-radius: 0;
 }
 
+@media only screen and (max-width: 600px) {
+    .project-container{
+        width: 100%;
+    }
+    #myCarousel {
+        width: 100%;
+    }
+    .carousel-item {
+        width: 100%;
+    }
+    .first-slide, .second-slide {
+        width: 100%;
+        max-width: 360px;
+        height: auto;
+    }
+}
