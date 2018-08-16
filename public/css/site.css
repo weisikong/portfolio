@@ -15,12 +15,19 @@ html, body {
     background: rgba(0, 0, 0, 0.377);
 }
 
-
-
 .cover-container {
     overflow: scroll;
     max-width: 80em;
 
+}
+
+.cover-heading, .about-contact, #article>h2 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+}
+
+#article>p {
+    font-family: 'Rokkitt', serif;
 }
 
 #about-page {
@@ -31,13 +38,8 @@ html, body {
 .about-page-article {
     max-width: 70%;
     box-sizing: border-box;
-    /*
-    overflow: scroll;*/
     margin: auto;
     padding-bottom: 6em;
-    /*font-family: 'Lora', serif;
-    font-family: 'EB Garamond', serif;
-    font-family: 'PT Sans', sans-serif;*/
     line-height: 30px;
     font-size: large;
     text-align: left;
@@ -45,10 +47,9 @@ html, body {
 }
 
 .about-contact {
-    /*
-    font-family: 'EB Garamond', serif;*/
     line-height: 30px;
     font-size: large;
+    margin-bottom: 3em;
 }
 
 /* small device */
@@ -60,7 +61,6 @@ html, body {
         max-width: 100%;
         padding: 1em;
     }
-
     #hidden1 {
         font-size: smaller;
     }
@@ -100,7 +100,6 @@ html, body {
 }
 
 .first-slide, .second-slide {
-    min-width: 30em !important;
     width: 30em;
     box-shadow: 5px 10px 8px #555555;
 }
@@ -115,10 +114,6 @@ html, body {
 .bg-secondary {
     background-color:transparent !important;
     border: transparent !important;
-}
-
-.about-contact {
-    margin-bottom: 3em;
 }
 
 .project-card {
