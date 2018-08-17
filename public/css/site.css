@@ -21,7 +21,7 @@ html, body {
 
 }
 
-.cover-heading, .about-contact, #article>h2 {
+.cover-heading, .about-contact>h2, #article>h2 {
     font-family: 'Dancing Script', cursive;
     font-weight: bold;
 }
@@ -34,6 +34,25 @@ html, body {
     width: 80%;
     float:left;
 }
+
+#blog-page {
+    width: 90%;
+    float:left;
+/*     background-color: rgba(255, 255, 255, 0.151);
+ */}
+
+ .blog-title {
+     margin-bottom: 3em;
+ }
+
+ .blog-article{
+     padding: 2em;
+     margin-top: 150px;
+     background-color: rgba(255, 255, 255, 0.151);
+     height: 100%;
+ }
+
+
 
 .about-page-article {
     max-width: 70%;
