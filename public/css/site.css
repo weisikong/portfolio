@@ -16,7 +16,7 @@ html, body {
 }
 
 .cover-container {
-    overflow: scroll;
+    overflow: auto;
     max-width: 80em;
 
 }
