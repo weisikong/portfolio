@@ -60,7 +60,7 @@ app.get("/contact", (req, res) => {
 
 app.use((req, res) => {
     //res.status(404).send("<img src='https://cdn-images-1.medium.com/max/1600/1*dMtM0XI574DCyD5miIcQYg.png' alt='Page not found' >");
-    res.status(404).send("OMG!!!Page not found. Go back while you can! ");
+    res.status(404).send("Opps! Page not found. Are you sure you wanna go there?");
 
 });
 
